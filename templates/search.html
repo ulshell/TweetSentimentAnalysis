@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block subtext %}
+{{ screen_name }}
+{% endblock %}
+
+
+
+
+{% block main %}
+<table class="table table-bordered" style="width:80%">
+<th colspan="2" class="bo">Tweets</th>
+{% for tweet in twee %}
+<tr>
+  {% if tweet[1] == 1 %}
+  <td class="bo"><a href="#" class="fa fa-twitter"></a>
+    {{ tweet[2] }}</td>
+  <td bgcolor="#00FF33">{{ tweet[0] }}</td>
+  {% elif tweet[1] == 0 %}
+  <td class="bo"><a href="#" class="fa fa-twitter"></a>
+    {{ tweet[2] }}</td>
+  <td bgcolor="#FFFF66">{{ tweet[0] }}</td>
+  {% else %}
+  <td class="bo"><a href="#" class="fa fa-twitter"></a>
+    {{ tweet[2] }}</td>
+  <td bgcolor="#FF6666">{{ tweet[0] }}</td>
+  {% endif %}
+</tr>
+{% endfor %}
+</table>
+{% endblock %}
+
+{% block body %}
+{{ chart | safe }}
+{% endblock %}

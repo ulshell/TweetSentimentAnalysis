@@ -1,0 +1,76 @@
+.navbar{
+  background-color:black;
+}
+
+.bo{
+  background: linear-gradient(to bottom, #89f7fe  0%, #66a6ff 100%);
+}
+.form-group{
+  width: 100%;
+}
+.searchbar{
+  width: 100%;
+}
+
+.roun {
+  box-shadow: 5px 5px 5px 5px #3333CC;
+  width: 100%;
+  height: 100%;
+}
+.person {
+  border: 10px solid transparent;
+  margin-bottom: 25px;
+  width: 280px;
+  height: 280px;
+  opacity: 0.9;
+}
+
+.person:hover {
+  border-color: #666666;
+}
+:root {
+  --button-border-color: #55ACEE;
+  --button-background-color:  #55ACEE;
+}
+.loginpage{
+  width: 100%;
+}
+.dec{
+
+    background: linear-gradient(to bottom, #89f7fe  0%, #66a6ff 100%);
+  border-radius: 10px;
+}
+
+.btn-primary {
+  border-color: var(--button-border-color);
+
+}
+.fa{
+  padding: 20px;
+  font-size: 30px;
+  width: 80px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa-twitter {
+  background: #89f7fe;
+  color: white;
+}
+table {
+  border-collapse: collapse;
+  box-shadow: 10px 10px 10px 10px #3333CC;
+}
+
+td:hover{
+  box-shadow: 10px 10px 10px 10px #3333CC;
+}
+th{
+  font-size: 20px;
+}
+td{
+  font-size: 18px;
+  font-family: Helvetica Neue;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

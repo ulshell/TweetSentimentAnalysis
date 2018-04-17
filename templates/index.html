@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+<form action="{{ url_for('search') }}" class="form-inline" method="get">
+    <div class="form-group">
+
+      <div class="row">
+        <div class="col-sm-4">
+          <p><strong>@sundarpichai</strong></p><br>
+          <a href="#demo1" data-toggle="collapse">
+          <img src="{{url_for('static', filename='5.jpg')}}" class="img-circle person" alt="Random Name"/>
+          </a>
+          <div id="demo1" class="collapse">
+            <p>Drummer</p>
+            <p>Loves drummin'</p>
+            <p>Member since 1988</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="searchbar">
+        <input class="form-control" name="screen_name" placeholder="@screen_name" type="text"/>
+        <button class="btn btn-primary" type="submit">Search</button>
+      </div>
+      <div>
+        <img src="{{url_for('static', filename='6.jpg')}}" class="img-circle person" alt="Random Name"/>
+      </div>
+        </div>
+        <div class="col-sm-4">
+          <p><strong>@narendramodi</strong></p><br>
+          <a href="#demo2" data-toggle="collapse">
+          <img src="{{url_for('static', filename='4.jpg')}}" class="img-circle person" alt="Random Name"/>
+          </a>
+          <div id="demo2" class="collapse">
+            <p>Drummer</p>
+            <p>Loves drummin'</p>
+            <p>Member since 1988</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <p><strong>@satyanadella</strong></p><br>
+          <a href="#demo3" data-toggle="collapse">
+          <img src="{{url_for('static', filename='1.jpg')}}" class="img-circle person" alt="Random Name"/>
+          </a>
+          <div id="demo3" class="collapse">
+            <p>Drummer</p>
+            <p>Loves drummin'</p>
+            <p>Member since 1988</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <p><strong>@JeffBezos</strong></p><br>
+          <a href="#demo4" data-toggle="collapse">
+          <img src="{{url_for('static', filename='2.jpg')}}" class="img-circle person" alt="Random Name"/>
+
+        </a>
+          <div id="demo4" class="collapse">
+            <p>Drummer</p>
+            <p>Loves drummin'</p>
+            <p>Member since 1988</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <p><strong>@MarkZuckerbergF</strong></p><br>
+          <a href="#demo5" data-toggle="collapse">
+          <img src="{{url_for('static', filename='3.jpg')}}" class="img-circle person" alt="Random Name"/>
+        </a>
+          <div id="demo5" class="collapse">
+            <p>Drummer</p>
+            <p>Loves drummin'</p>
+            <p>Member since 1988</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</form>
+{% endblock %}

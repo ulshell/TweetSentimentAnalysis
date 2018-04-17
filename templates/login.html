@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block login %}
+<br>
+<br>
+<div class="col-xs-8 col-sm-8 lf">
+  <img src="{{url_for('static', filename='newplot.jpg')}}" class="img-rounded roun" alt="Random Name"/>
+  <br>
+  <br>
+</div>
+<br>
+<br>
+<div align="right" class="col-xs-4 col-sm-4 rg">
+    <form action="{{ url_for('login') }}" method="post">
+      <fieldset>
+            <div class="form-group">
+                <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text"/>
+            </div>
+            <div class="form-group">
+                <input class="form-control" name="password" placeholder="Password" type="password"/>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary" type="submit">Log In</button>
+            </div>
+      </fieldset>
+    </form>
+  </div>
+{% endblock %}

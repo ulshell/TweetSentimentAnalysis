@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block login %}
+    <table class="table table-striped" style="width:100%">
+      <tr>
+        <th>screen_name</th>
+        <th>Search Date Time</th>
+      </tr>
+    {% for history in histories %}
+      <tr>
+        <td>{{ history.screenname }}</td>
+        <td>{{ history.search }}</td>
+      </tr>
+    {% endfor %}
+    </table>
+
+{% endblock %}
