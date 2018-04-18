@@ -13,7 +13,7 @@
 }
 
 .roun {
-  box-shadow: 5px 5px 5px 5px #3333CC;
+  box-shadow: 5px 5px 5px 5px #0099CC;
   width: 100%;
   height: 100%;
 }
@@ -59,11 +59,11 @@
 }
 table {
   border-collapse: collapse;
-  box-shadow: 10px 10px 10px 10px #3333CC;
+  box-shadow: 10px 10px 10px 10px #0099CC;
 }
 
 td:hover{
-  box-shadow: 10px 10px 10px 10px #3333CC;
+  box-shadow: 10px 10px 10px 10px #0099CC;
 }
 th{
   font-size: 20px;
